@@ -1,0 +1,12 @@
+#Date: 09/07/2020
+#Auteur: AUBIN Raphaël
+#Programme: 
+
+#----------Import----------
+from os import listdir
+from os.path import isfile, join
+#----------Programme---------- 
+dirName = '/home/raphael/bash'
+fileNames = [f for f in listdir(dirName) if isfile(join(dirName, f))]
+#----------Resultat----------
+print (fileNames)
